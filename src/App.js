@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import About from './components/aboutus/About'
+import ContactUs from './components/contactUs/ContactUs'
+import Faq from './components/faq/Faq'
+import { Routes, Route } from 'react-router-dom';
+import Navbar from './Navbar/Navbar'
+import CivilInteriour from './components/civilAndinterior/CivilInteriour';
+import Electrical from './components/electrical/Electrical';
+import Pulmbing from './components/plumbing/Pulmbing';
+import Home from './components/home/Home';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+    <Navbar/>
+      <Routes>
+      <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contactus" element={<ContactUs />} />
+        <Route path="/faq" element={<Faq />} />
+        <Route path="/civilinteriour" element={<CivilInteriour />} />
+        <Route path="/electrical" element={<Electrical />} />
+        <Route path="/plumbing" element={<Pulmbing />} />
+      </Routes>
+    </>
+  )
 }
 
-export default App;
+export default App
+

@@ -1,0 +1,400 @@
+/* styles.css */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Montserrat", sans-serif;
+}
+
+:root {
+    --darkred: #df2b54;
+    --green: #125430;
+    --lightred2: #c90000;
+    --lightred: #be0f2b;
+    --purple: #58117a;
+    --yellow: #e9b608;
+    --grey: #f8f9fa;
+    --skyblue: #e5effa;
+    --blue: #1f5bdd;
+    --semiBlue: #517fe4;
+    --white: #ffffff;
+    --black: #000000;
+    --semiblack: #928f8f;
+    --orange: rgb(255 189 83);
+}
+
+.container {
+    max-width: 1200px;
+    width: 90%;
+    height: auto;
+    margin: auto;
+}
+
+/* text color start here */
+.text-ltgreen {
+    color: var(--ltgreen);
+}
+
+.text-orange {
+    color: var(--orange);
+}
+
+.text-blue {
+    color: var(--blue);
+}
+
+.text-semiBlue {
+    color: var(--semiBlue);
+}
+
+.text-white {
+    color: var(--white);
+}
+
+.text-black {
+    color: var(--black);
+}
+
+.text-bgBlack {
+    color: var(--semiblack);
+}
+
+.text-semiBlack {
+    color: var(--semiblack);
+}
+
+/* cursor pointer  */
+.cp {
+    cursor: pointer;
+}
+
+/* shortcut font size */
+.fs-9 {
+    font-size: 9px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-11 {
+    font-size: 11px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-13 {
+    font-size: 13px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.fs-16 {
+    font-size: 16px;
+}
+
+.fs-17 {
+    font-size: 17px;
+}
+
+.fs-18 {
+    font-size: 18px;
+}
+
+.fs-19 {
+    font-size: 19px;
+}
+
+.fs-20 {
+    font-size: 20px;
+}
+
+.fs-21 {
+    font-size: 21px;
+}
+
+.fs-22 {
+    font-size: 22px;
+}
+
+.fs-23 {
+    font-size: 23px;
+}
+
+.fs-24 {
+    font-size: 24px;
+}
+
+.fs-25 {
+    font-size: 25px;
+}
+
+.fs-28 {
+    font-size: 28px;
+}
+
+.fs-30 {
+    font-size: 30px;
+}
+
+.fw-300 {
+    font-weight: 300;
+}
+
+.fw-400 {
+    font-weight: 400;
+}
+
+.fw-500 {
+    font-weight: 500;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.fw-700 {
+    font-weight: 700;
+}
+
+.fw-800 {
+    font-weight: 800;
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-orange {
+    background-color: var(--orange);
+}
+
+.cp {
+    cursor: pointer;
+}
+
+.navbar_trp {
+    width: 100%;
+    height: auto;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.navlinks {
+    font-size: 16px;
+    font-weight: 500;
+    text-decoration: none;
+    color: #000;
+}
+
+#searchbar {
+    display: none;
+}
+
+.parentsearchbar {
+    top: 126%;
+    position: absolute;
+    height: auto;
+    width: 15rem;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    padding: 20px;
+    right: -60%;
+}
+
+.input_style {
+    border-radius: 20px;
+    padding: 0.5rem;
+    border: 1px solid #a9a9a9;
+}
+
+.navbar_Btn {
+    padding: 10px 28px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    border: none;
+}
+
+.border_circle {
+    width: 100%;
+    height: 100%;
+    padding: 12rem;
+    border-radius: 20px;
+    background-color: #fff;
+    border: 3px solid rgb(255 189 83);
+}
+
+.details_text_box {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border: 2px solid #a7a59e;
+    border-radius: 10px;
+    background-color: #fff;
+    height: auto;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-weight: 700;
+    gap: 5%;
+    margin-bottom: 20px;
+    line-height: 20px;
+}
+
+.boxStyleLarge {
+    background: #f2f2f2;
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.boxStyle {
+    background: #f2f2f2;
+    height: 150px;
+    width: 125px;
+    border-radius: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+.underline {
+    height: 1px;
+    border: 1px solid #a7a59e;
+    width: 50px;
+    margin-bottom: 20px;
+}
+
+.underline_parent {
+    display: flex;
+    flex-direction: column;
+    gap: 110%;
+    height: 8vh;
+}
+
+.underline2 {
+    height: 37vh;
+    border: 1px solid #a7a59e;
+    transform: rotate(180deg);
+}
+
+.underline3 {
+    width: 73vh;
+    height: 0vh;
+    border: 1px solid #a7a59e;
+}
+
+.new_div {
+    height: 80px;
+    width: 90px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 10px -8px #111;
+}
+
+.new_div_child {
+    position: absolute;
+    border-radius: 100%;
+    height: 60px;
+    width: 0%;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    left: 11%;
+}
+
+.new_div_child2 {
+    position: absolute;
+    border-radius: 100%;
+    height: 60px;
+    width: 0%;
+    top: -15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    left: 75%;
+}
+
+.absolute_div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    top: -51px;
+}
+
+.buyer_text {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    font-size: 16px;
+    font-weight: 500;
+    height: 100%;
+}
+
+.circle {
+    padding: 10px;
+    width: 65%;
+    border-radius: 100px;
+    border: 2px solid #a7a59e;
+    border-style: dashed;
+}
+
+.button_div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.tabs{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    position: sticky;
+    top: 100px;
+}
+.buy_vende_btn{
+    width: 20%;
+    height: auto;
+    padding: 5px 0px;
+    border: 1px solid #000;
+    border-radius: 50px;
+    display: flex;
+    justify-content: space-around;
+}
+.tab_btns{
+    color: #000;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    transition: background-color 0.3s;
+}
+.tab_btns.clicked {
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    width: 100%;
+    padding: 10px 2rem;
+}
