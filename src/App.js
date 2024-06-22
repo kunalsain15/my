@@ -8,6 +8,7 @@ import CivilInteriour from './components/civilAndinterior/CivilInteriour';
 import Electrical from './components/electrical/Electrical';
 import Pulmbing from './components/plumbing/Pulmbing';
 import Home from './components/home/Home';
+import Footer from './Footer/Footer'
 
 const App = () => {
   return (
@@ -22,6 +23,7 @@ const App = () => {
         <Route path="/electrical" element={<Electrical />} />
         <Route path="/plumbing" element={<Pulmbing />} />
       </Routes>
+      <Footer/>
     </>
   )
 }
